@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #6d99a5, rgb(21, 56, 99));
+}
+
+.contenedor-flex {
+    margin-top: 90px;
+    display: flex;
+}
+
+.elemento {
+    padding: 10px;
+    margin: 5px;
+    background-color: transparent;
+}
+
+.elemento .div-formulario {
+    width: 45vw;
+    height: 390px;
+    margin: 15px 15px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento .div-formulario h2 {
+    margin: 10px;
+    color: white;
+}
+
+.elemento .div-formulario form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento .div-formulario form input{
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px; 
+}
+
+.elemento .div-formulario form button {
+    width: 60%;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color:  rgb(21, 56, 99);
+    color: white;
+}
+
+.itemDetail {  width: 45vw;
+    height: 390px;
+    margin: 15px 15px;
+    display: flex;
+    align-items: center; 
+}
+
+.itemDetail h1 {
+    text-align:center;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+}
+
+.btn {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer; 
+}
+
+.edit{
+    width: 110px;
+    background: rgb(21, 56, 99);
+}
+
+.delete {
+    width: 110px;
+    background-color: rgb(237, 79, 79);
+}
+
+.items-container { 
+    display: grid; 
+    flex-direction: row;
+    align-items: center; 
+    overflow-x: auto; 
+    white-space: nowrap; 
+    grid-auto-flow: column;
+}
+
+.item {
+    border: 1px solid rgb(0, 4, 8);
+    height: 250px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 15px; 
+    background-color:  white; /* #033741;*/
+    color: black;
+    text-align: center;
+    font-size: 10px; 
+    border-radius: 5px; 
+}
+
+.text-name{
+    font-size: 16px;  
+    color: black;
+}
+
+.text-detail{
+    text-align: center;
+    font-size: 16px;  
+    color: white;
+}
+
+.text-price{
+    text-align: center;
+    font-size: 20px;  
+    color: gray; 
+}
+
+.text-priceDetail{
+    text-align: center;
+    font-size: 22px;  
+    color: rgb(255, 252, 252); 
+}
+
+.text-code{
+    text-align:center;
+    font-size: 16px;  
+    color: rgb(170, 168, 168); 
+}
+  
+.item button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    width: 100%; 
+    background-color: rgb(21, 56, 99);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 42%;
+    max-width: 100%;
+}
+
+.newDiv1{
+    width: 250px;
+}
+
+.newDiv2{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex; 
+    flex-direction: column;
+    width: 250px;
+}
+
+.itemDetailDefaul {
+    align-items: center; 
+    width: 46.4vw;
+}
+
+#main-header {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    color: white;
+    height: 80px;
+    position: fixed;
+    width: 100%; 
+    left: 0;
+    top: 0;
+    height: 80px;
+}
+
+#main-header a {
+    color: white;
+}
+
+#logo-header {
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+#logo-header:hover {
+    color: #0b76a6;
+}
+
+#logo-header .site-name {
+    display: block;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.qtyProds{
+    margin-left: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.btnEdit{
+    width: 28vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnEdit button{
+    background-color: #1f2e35;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;  
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="app">
+    <header id="main-header">
+        <a id="logo-header" href="#">
+            <span class="site-name">CelysMaster Pro</span>
+        </a>
+    </header>
+
+    <div class="contenedor-flex">
+
+        <div class="elemento">
+            <div class="div-formulario">
+                <h2 id="title"></h2>
+                <form action="#" id="formulario">
+                    <input type="text" id="code" placeholder="Código">
+                    <input type="text" id="name" placeholder="Nombre">
+                    <input type="text" id="detail" placeholder="Detalle">
+                    <input type="number" id="price" placeholder="Precio">
+                    <input type="text" id="img" placeholder="Imagen">
+
+                    <div class="btnEdit">
+                        <button type="submit" id="btnAdd">Crear</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="elemento">
+            <div class="div-listShoppingCart">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="elemento">
+        <h1 id="qtyProds" class="qtyProds"></h1>
+        <div class="items-container">
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
