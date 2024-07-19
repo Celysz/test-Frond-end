@@ -1,4 +1,6 @@
 const url = "https://test-api-i7ml.onrender.com/items"
+const urlLocal = "http://localhost:3500/items"
+
 var misEncabezados = new Headers();
 misEncabezados.append('Content-Type', 'application/json');
 
@@ -284,10 +286,7 @@ async function editItemAPi() {
 
         formulario.reset();
         cargarItemMain();
-        formulario.querySelector('button[type="submit"]').textContent = 'Crear';
-        const title = document.querySelector('#title');
-        title.textContent = 'Crear Producto';
-        editando = false;
+        cancelEdit()
 
     } catch (error) {
         console.error('Error en la petición: ', error);
@@ -307,7 +306,10 @@ function cancelEdit() {
     crear.onclick = () => validateData(item);
     crear.classList.add('btn', 'edit');
     crear.textContent = 'Crear';
-    btnEdit.appendChild(crear)
+    btnEdit.appendChild(crear);
+    const title = document.querySelector('#title');
+    title.textContent = 'Crear Producto';
+
     editando = false;
 }
 
