@@ -109,7 +109,7 @@ async function createItem() {
 
 async function setItems(body) {
     try {
-        const response = await fetch(url, {
+        const response = await fetch(urlLocal, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -138,7 +138,7 @@ async function getItems() {
         headers: misEncabezados
     };
     try {
-        const response = await fetch(url, opcionesDeSolicitud);
+        const response = await fetch(urlLocal, opcionesDeSolicitud);
         if (!response.ok) {
             throw new Error('La solicitud no fue exitosa');
         }
@@ -256,7 +256,7 @@ async function deleteItem(id) {
         headers: misEncabezados
     };
     try {
-        const response = await fetch(url + '/' + id, opcionesDeSolicitud);
+        const response = await fetch(urlLocal + '/' + id, opcionesDeSolicitud);
         if (!response.ok) {
             throw new Error('La solicitud no fue exitosa');
         }
@@ -278,7 +278,7 @@ async function editItemAPi() {
         body: JSON.stringify(objItem)
     };
     try {
-        const response = await fetch(url + '/' + objItem.id, opcionesDeSolicitud);
+        const response = await fetch(urlLocal + '/' + objItem.id, opcionesDeSolicitud);
         if (!response.ok) {
             throw new Error('La solicitud no fue exitosa');
         }
